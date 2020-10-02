@@ -9,8 +9,19 @@ what it does and why.
 */
 
 const kebabCase = function (str) {
-    // your code here
-}
+    // Check if string is empty.
+    if (!str) {
+        return 'This is an empty string!';
+    }
+    // change tolowerCase -> add to array divided by space
+    const newStr = str.toLowerCase().split(" ").map(el => {
+        // Capitalize first character
+        return el.replace(el[0], el[0].toUpperCase());
+    }).join("-"); // Connect by "-";
+
+    // return new string(kebabCase);
+    return newStr;
+};
 
 console.log((kebabCase('Coding Is Fun') === 'Coding-Is-Fun') ? "Test 1: Passing" : "Test 1: Failing");
 

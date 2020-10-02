@@ -4,8 +4,8 @@ ex. [2, 3, 5, [1, 2], [3]] ---> 16
 */
 
 const sumNestedArray = function (arr) {
-
-}
+    return arr.flat(Infinity).reduce((el, cur) => el + cur);
+};
 
 console.log((sumNestedArray([1, [2, 3, 4], 6, 7, 5]) === 28) ? "Test 1: Passing" : "Test 1: Failing");
 

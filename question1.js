@@ -3,8 +3,8 @@
 // ex. ('Jenny', 71) --> "Jenny is 71 years old!" 
 
 const nameAndAge = function(name, age) {
-    // your code here
-}
+    return `${name} is ${age} years old!`;
+};
 
 
 console.log((nameAndAge('John', 27) === "John is 27 years old!") ? "Test 1: Passing" : "Test 1: Failing");
